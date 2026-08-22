@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { Hero } from '@/components/home/Hero';
+import { FeatureMarquee } from '@/components/home/FeatureMarquee';
 import { QuickTools } from '@/components/home/QuickTools';
-import { WhyCampusForge } from '@/components/home/WhyCampusForge';
-import { PopularResources } from '@/components/home/PopularResources';
-import { PlacementPreview } from '@/components/home/PlacementPreview';
+import { BranchSelector } from '@/components/home/BranchSelector';
+import { WhyVidyaaraa } from '@/components/home/WhyVidyaaraa';
+import { RequestNotes } from '@/components/home/RequestNotes';
+import { FeedbackSection } from '@/components/home/FeedbackSection';
 import { ChevronRight, GraduationCap } from 'lucide-react';
 
 export default function Home() {
@@ -12,35 +14,41 @@ export default function Home() {
       {/* 1. HERO */}
       <Hero />
 
-      {/* 2. QUICK TOOLS */}
+      {/* 2. MOVING FEATURE STRIP (MARQUEE) */}
+      <FeatureMarquee />
+
+      {/* 3. QUICK TOOLS */}
       <QuickTools />
 
-      {/* 3. WHY CAMPUSFORGE */}
-      <WhyCampusForge />
+      {/* 4. CHOOSE YOUR BRANCH */}
+      <BranchSelector />
 
-      {/* 4. POPULAR RESOURCES */}
-      <PopularResources />
+      {/* 5. WHY VIDYAARAA */}
+      <WhyVidyaaraa />
 
-      {/* 5. PLACEMENT PREVIEW */}
-      <PlacementPreview />
+      {/* 6. REQUEST NOTES */}
+      <RequestNotes />
 
-      {/* 6. FINAL CTA */}
-      <section className="section bg-[var(--bg)] border-t border-[var(--bd)]">
-        <div className="container-cf max-w-4xl text-center space-y-6">
-          <div className="w-12 h-12 rounded-full bg-[rgba(0,212,170,0.1)] border border-[rgba(0,212,170,0.2)] flex items-center justify-center mx-auto text-[var(--accent)]">
+      {/* 7. FEEDBACK */}
+      <FeedbackSection />
+
+      {/* 8. FINAL CTA */}
+      <section className="py-12 sm:py-16 bg-[var(--bg-raised)] border-t border-[var(--bd)] text-center">
+        <div className="container-cf max-w-3xl space-y-6">
+          <div className="w-12 h-12 rounded-2xl bg-[rgba(0,212,170,0.1)] border border-[rgba(0,212,170,0.2)] flex items-center justify-center mx-auto text-[var(--accent)] shadow-md">
             <GraduationCap size={24} />
           </div>
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight text-[var(--text-1)]">
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[var(--text-1)]">
               Ready to simplify your college prep?
             </h2>
             <p className="text-sm text-[var(--text-2)] max-w-md mx-auto">
-              Get direct access to notes, questions papers, grade calculations, and study strategies without the ads or registration.
+              Get instant access to notes, question papers, grade calculators, and AI assistance without sign-up or ads.
             </p>
           </div>
-          <div className="flex flex-wrap gap-4 justify-center pt-2">
+          <div className="flex flex-wrap gap-3.5 justify-center pt-2">
             <Link href="/resources" className="btn btn-primary btn-lg flex items-center">
-              Explore Resources
+              <span>Explore Resources</span>
               <ChevronRight size={18} />
             </Link>
             <Link href="/calculators" className="btn btn-secondary btn-lg">

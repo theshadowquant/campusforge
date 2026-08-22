@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { Sun, Moon, Search, Menu, X, Hammer } from 'lucide-react';
+import { Sun, Moon, Search, Menu, X, GraduationCap } from 'lucide-react';
 import { useTheme } from '@/components/ThemeProvider';
 import { GlobalSearch } from '@/components/search/GlobalSearch';
 
@@ -13,7 +13,7 @@ const navLinks = [
   { href: '/pyqs', label: 'PYQs' },
   { href: '/planner', label: 'Planner' },
   { href: '/placement', label: 'Placement' },
-  { href: '/ai', label: 'AI Copilot' },
+  { href: '/ai', label: 'Vidyaaraa AI' },
 ];
 
 export function Navbar() {
@@ -70,13 +70,13 @@ export function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            aria-label="CampusForge home"
+            aria-label="Vidyaaraa home"
             style={{
               display: 'flex',
               alignItems: 'center',
               gap: '0.5rem',
               fontWeight: 800,
-              fontSize: '1.15rem',
+              fontSize: '1.2rem',
               color: 'var(--text-1)',
               textDecoration: 'none',
               flexShrink: 0,
@@ -87,15 +87,16 @@ export function Navbar() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                width: '2rem',
-                height: '2rem',
+                width: '2.1rem',
+                height: '2.1rem',
                 borderRadius: '0.5rem',
                 background: 'linear-gradient(135deg, #00D4AA, #00A88A)',
+                boxShadow: '0 2px 8px rgba(0, 212, 170, 0.25)',
               }}
             >
-              <Hammer size={14} color="#0F1729" strokeWidth={2.5} />
+              <GraduationCap size={16} color="#0F1729" strokeWidth={2.5} />
             </span>
-            <span>CampusForge</span>
+            <span style={{ letterSpacing: '-0.02em' }}>Vidyaaraa</span>
           </Link>
 
           {/* Desktop Nav */}

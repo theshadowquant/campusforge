@@ -80,7 +80,7 @@ export function StudyPlanner() {
   const handleReset = () => {
     if (confirm('Are you sure you want to reset and delete your current planner?')) {
       if (typeof window !== 'undefined') {
-        localStorage.removeItem('campusforge_plans');
+        localStorage.removeItem('vidyaaraa_plans');
       }
       setCurrentPlan(null);
       setSubjectsList([]);

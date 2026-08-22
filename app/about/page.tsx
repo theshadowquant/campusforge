@@ -8,12 +8,12 @@ export default function AboutPage() {
         
         {/* Core Header */}
         <div className="text-center space-y-4">
-          <span className="badge badge-cyan">About CampusForge</span>
+          <span className="badge badge-cyan">About Vidyaaraa</span>
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[var(--text-1)]">
             Your Academic Command Center
           </h1>
           <p className="text-sm text-[var(--text-2)] max-w-md mx-auto leading-relaxed">
-            CampusForge was built with one goal: to eliminate the chaos of college preparation. No signups, no paywalls, just fast and useful tools.
+            Vidyaaraa was built with one goal: to eliminate the chaos of college preparation. No signups, no paywalls, just fast and useful tools.
           </p>
         </div>
 
@@ -70,7 +70,7 @@ export default function AboutPage() {
         <div className="card p-6 md:p-8 space-y-4">
           <h2 className="text-lg font-bold text-[var(--text-1)]">Architecture &amp; Future Growth</h2>
           <p className="text-xs text-[var(--text-2)] leading-relaxed">
-            CampusForge is designed on a robust Server-Component-driven Next.js architecture. The data schema is fully decoupled, making university expansion simple. In future phases, CampusForge will support:
+            Vidyaaraa is designed on a robust Server-Component-driven Next.js architecture. The data schema is fully decoupled, making university expansion simple. In future phases, Vidyaaraa will support:
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none p-0 m-0">
             <li className="text-[11px] text-[var(--text-2)] flex items-center gap-2">

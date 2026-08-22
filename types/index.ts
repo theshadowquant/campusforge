@@ -1,5 +1,5 @@
 // ============================================================
-// CampusForge — Core TypeScript Types
+// Vidyaaraa — Core TypeScript Types
 // ============================================================
 
 export interface University {

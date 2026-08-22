@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Hammer, Globe, MessageSquare, Briefcase } from 'lucide-react';
+import { GraduationCap, Globe, MessageSquare, Briefcase } from 'lucide-react';
 
 const footerLinks = [
   { label: 'Resources', href: '/resources' },
@@ -9,6 +9,7 @@ const footerLinks = [
   { label: 'PYQs', href: '/pyqs' },
   { label: 'Planner', href: '/planner' },
   { label: 'Placement', href: '/placement' },
+  { label: 'Vidyaaraa AI', href: '/ai' },
   { label: 'About', href: '/about' },
 ];
 
@@ -40,7 +41,7 @@ export function Footer() {
                 alignItems: 'center',
                 gap: '0.5rem',
                 fontWeight: 800,
-                fontSize: '1.1rem',
+                fontSize: '1.15rem',
                 color: 'var(--text-1)',
                 textDecoration: 'none',
                 marginBottom: '0.75rem',
@@ -51,15 +52,15 @@ export function Footer() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  width: '1.75rem',
-                  height: '1.75rem',
+                  width: '1.8rem',
+                  height: '1.8rem',
                   borderRadius: '0.4rem',
                   background: 'linear-gradient(135deg, #00D4AA, #00A88A)',
                 }}
               >
-                <Hammer size={12} color="#0F1729" strokeWidth={2.5} />
+                <GraduationCap size={14} color="#0F1729" strokeWidth={2.5} />
               </span>
-              CampusForge
+              Vidyaaraa
             </Link>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-3)', lineHeight: 1.6, maxWidth: '220px' }}>
               Built for students who want to get ahead.
@@ -136,7 +137,7 @@ export function Footer() {
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               {[
-                { label: 'About CampusForge', href: '/about' },
+                { label: 'About Vidyaaraa', href: '/about' },
                 { label: 'Privacy Policy', href: '#' },
                 { label: 'Terms of Use', href: '#' },
               ].map((item) => (
@@ -173,7 +174,7 @@ export function Footer() {
           }}
         >
           <p style={{ fontSize: '0.8rem', color: 'var(--text-3)' }}>
-            © {new Date().getFullYear()} CampusForge. All rights reserved.
+            © {new Date().getFullYear()} Vidyaaraa. All rights reserved.
           </p>
           <p style={{ fontSize: '0.8rem', color: 'var(--text-3)' }}>
             Made with care for VTU students

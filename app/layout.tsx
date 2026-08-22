@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CampusForge — College Resources, Tools & Study Platform",
-  description: "CampusForge brings college notes, previous-year papers, SGPA and CGPA calculators, study tools and placement resources together in one place for VTU and other engineering students.",
-  keywords: "VTU, SGPA, CGPA, engineering, notes, previous year papers, PYQ, calculator, study planner, placement prep, college resources",
+  title: "Vidyaaraa — VTU Engineering Resources, Calculators & AI Copilot",
+  description: "Vidyaaraa brings college notes, previous-year papers, SGPA and CGPA calculators, study tools and placement resources together in one place for VTU and engineering students.",
+  keywords: "Vidyaaraa, VTU, SGPA, CGPA, engineering, notes, previous year papers, PYQ, calculator, study planner, placement prep, college resources, Vidyaaraa AI",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

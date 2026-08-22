@@ -5,11 +5,11 @@ import { Sparkles, Calendar, BookOpen, GraduationCap, ChevronRight, CheckCircle2
 
 export function Hero() {
   return (
-    <section className="section bg-gradient-to-b from-[var(--bg)] via-[var(--bg-overlay)] to-[var(--bg)] overflow-hidden">
-      <div className="container-cf grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <section className="py-8 sm:py-12 lg:py-14 bg-gradient-to-b from-[var(--bg)] via-[var(--bg-overlay)] to-[var(--bg)] overflow-hidden border-b border-[var(--bd)]">
+      <div className="container-cf grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         
         {/* Left column - Text Content */}
-        <div className="lg:col-span-6 flex flex-col items-start space-y-6 text-left max-w-xl">
+        <div className="lg:col-span-6 flex flex-col items-start space-y-5 text-left max-w-xl">
           {/* Small Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[rgba(0,212,170,0.1)] border border-[rgba(0,212,170,0.15)] text-[var(--accent)] font-semibold text-xs uppercase tracking-wider">
             <Sparkles size={13} className="text-[var(--accent)] animate-pulse" />
@@ -24,16 +24,16 @@ export function Hero() {
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg text-[var(--text-2)] leading-relaxed">
-            Notes, previous-year papers, calculators, study tools and placement resources — organized in one place.
+            Notes, previous-year papers, calculators, study tools and AI — organized in one place.
           </p>
 
           {/* Call to Actions */}
-          <div className="flex flex-wrap gap-4 w-full sm:w-auto pt-2">
+          <div className="flex flex-wrap gap-3.5 w-full sm:w-auto pt-1">
             <Link href="/resources" className="btn btn-primary btn-lg w-full sm:w-auto flex items-center justify-center">
-              Explore CampusForge
+              Explore Vidyaaraa
               <ChevronRight size={18} />
             </Link>
-            <Link href="/calculators#cgpa" className="btn btn-secondary btn-lg w-full sm:w-auto flex items-center justify-center">
+            <Link href="/calculators" className="btn btn-secondary btn-lg w-full sm:w-auto flex items-center justify-center">
               Calculate CGPA
             </Link>
           </div>
@@ -49,7 +49,7 @@ export function Hero() {
                 <span className="w-3 h-3 rounded-full bg-red-400"></span>
                 <span className="w-3 h-3 rounded-full bg-yellow-400"></span>
                 <span className="w-3 h-3 rounded-full bg-green-400"></span>
-                <span className="text-[11px] text-[var(--text-3)] font-mono ml-2">campusforge.app/dashboard</span>
+                <span className="text-[11px] text-[var(--text-3)] font-mono ml-2">vidyaaraa.app/dashboard</span>
               </div>
               <div className="badge badge-cyan text-[10px] font-mono">
                 VTU · 4th Sem CSE

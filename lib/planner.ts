@@ -80,13 +80,13 @@ export function savePlan(plan: StudyPlan): void {
   const idx = plans.findIndex((p) => p.id === plan.id);
   if (idx >= 0) plans[idx] = plan;
   else plans.push(plan);
-  localStorage.setItem('campusforge_plans', JSON.stringify(plans));
+  localStorage.setItem('vidyaaraa_plans', JSON.stringify(plans));
 }
 
 export function getAllPlans(): StudyPlan[] {
   if (typeof window === 'undefined') return [];
   try {
-    const data = localStorage.getItem('campusforge_plans');
+    const data = localStorage.getItem('vidyaaraa_plans') || localStorage.getItem('campusforge_plans');
     return data ? JSON.parse(data) : [];
   } catch {
     return [];

@@ -76,7 +76,7 @@ export function GlobalSearch({ onClose }: { onClose: () => void }) {
       {/* Modal */}
       <div
         role="dialog"
-        aria-label="Search CampusForge"
+        aria-label="Search Vidyaaraa"
         aria-modal="true"
         style={{
           position: 'fixed',
